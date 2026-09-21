@@ -60,7 +60,7 @@ body::before {
     justify-content: center;
     align-items: center;
 
-    padding: 30px 15px;
+    padding: 20px 12px;
 }
 
 /* =========================
@@ -71,7 +71,7 @@ body::before {
 
     width: min(600px, 95%);
 
-    padding: 45px 30px;
+    padding: 40px 28px;
 
     text-align: center;
 
@@ -79,7 +79,7 @@ body::before {
 
     border: 1px solid rgba(255,255,255,.3);
 
-    border-radius: 30px;
+    border-radius: 28px;
 
     backdrop-filter: blur(15px);
 
@@ -125,7 +125,7 @@ body::before {
 
     font-size: 13px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 /* =========================
@@ -134,9 +134,9 @@ body::before {
 
 h1 {
 
-    font-size: clamp(40px, 10vw, 70px);
+    font-size: clamp(36px, 9vw, 70px);
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     color: #ffe45c;
 
@@ -164,13 +164,13 @@ h1 {
 
 .subtitle {
 
-    font-size: 18px;
+    font-size: 17px;
 
     color: #fff;
 
     opacity: .9;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 /* =========================
@@ -181,11 +181,11 @@ h1 {
 
     position: relative;
 
-    height: 280px;
+    height: 260px;
 
-    margin: 10px auto 25px;
+    margin: 5px auto 20px;
 
-    max-width: 430px;
+    max-width: 400px;
 }
 
 /* Tallos */
@@ -194,9 +194,9 @@ h1 {
 
     position: absolute;
 
-    width: 7px;
+    width: 6px;
 
-    height: 160px;
+    height: 150px;
 
     background: linear-gradient(
         to right,
@@ -205,7 +205,7 @@ h1 {
         #245b26
     );
 
-    bottom: -130px;
+    bottom: -120px;
 
     left: 50%;
 
@@ -220,7 +220,7 @@ h1 {
 
     position: absolute;
 
-    bottom: 90px;
+    bottom: 80px;
 
     left: 50%;
 
@@ -234,15 +234,15 @@ h1 {
 }
 
 .flower2 {
-    transform: translateX(-50%) rotate(-12deg) translateY(-25px);
+    transform: translateX(-50%) rotate(-12deg) translateY(-22px);
 }
 
 .flower3 {
-    transform: translateX(-50%) translateY(-45px);
+    transform: translateX(-50%) translateY(-40px);
 }
 
 .flower4 {
-    transform: translateX(-50%) rotate(12deg) translateY(-25px);
+    transform: translateX(-50%) rotate(12deg) translateY(-22px);
 }
 
 .flower5 {
@@ -266,7 +266,7 @@ h1 {
 
     z-index: 2;
 
-    font-size: 70px;
+    font-size: 64px;
 
     filter:
         drop-shadow(0 5px 5px rgba(0,0,0,.3))
@@ -297,11 +297,11 @@ h1 {
 
     position: absolute;
 
-    bottom: -80px;
+    bottom: -70px;
 
-    left: -20px;
+    left: -18px;
 
-    font-size: 45px;
+    font-size: 40px;
 
     transform: rotate(-20deg);
 }
@@ -314,7 +314,7 @@ button {
 
     border: none;
 
-    padding: 15px 30px;
+    padding: 14px 28px;
 
     border-radius: 50px;
 
@@ -326,7 +326,7 @@ button {
 
     color: #633b00;
 
-    font-size: 17px;
+    font-size: 16px;
 
     font-weight: bold;
 
@@ -375,29 +375,29 @@ button:active {
 
 .message.show {
 
-    max-height: 500px;
+    max-height: 800px;
 
     opacity: 1;
 
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .message h2 {
 
     color: #ffe56b;
 
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .message p {
 
-    min-height: 90px;
+    min-height: 80px;
 
-    line-height: 1.8;
+    line-height: 1.7;
 
-    font-size: 18px;
+    font-size: 17px;
 
     color: #fff;
 }
@@ -408,9 +408,9 @@ button:active {
 
 .heart {
 
-    font-size: 45px;
+    font-size: 42px;
 
-    margin-top: 15px;
+    margin-top: 12px;
 
     animation: heartBeat 1.2s infinite;
 }
@@ -476,48 +476,153 @@ button:active {
 
     position: fixed;
 
-    bottom: 15px;
+    bottom: 12px;
 
     width: 100%;
 
     text-align: center;
 
-    font-size: 13px;
+    font-size: 12px;
 
     opacity: .7;
 
     pointer-events: none;
+    z-index: 5;
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE - MÓVILES
 ========================= */
 
 @media (max-width: 600px) {
 
-    .card {
-
-        padding: 35px 20px;
-
+    .container {
+        padding: 15px 10px;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 50px;
     }
 
-    .bouquet {
+    .card {
+        padding: 28px 16px;
+        border-radius: 24px;
+        width: 96%;
+    }
 
-        transform: scale(.85);
+    .date {
+        font-size: 11px;
+        letter-spacing: 3px;
+        padding: 6px 14px;
+        margin-bottom: 14px;
+    }
 
-        margin-top: -5px;
-
-        margin-bottom: 0;
+    h1 {
+        font-size: clamp(32px, 11vw, 48px);
+        margin-bottom: 6px;
     }
 
     .subtitle {
+        font-size: 15px;
+        margin-bottom: 16px;
+        line-height: 1.4;
+    }
 
-        font-size: 16px;
+    .bouquet {
+        height: 180px;
+        margin: 0 auto 15px;
+        max-width: 280px;
+        transform: scale(0.9);
+    }
+
+    .stem {
+        height: 110px;
+        width: 5px;
+        bottom: -85px;
+    }
+
+    .flower {
+        bottom: 55px;
+    }
+
+    .flower1 {
+        transform: translateX(-50%) rotate(-22deg);
+    }
+
+    .flower2 {
+        transform: translateX(-50%) rotate(-10deg) translateY(-18px);
+    }
+
+    .flower3 {
+        transform: translateX(-50%) translateY(-32px);
+    }
+
+    .flower4 {
+        transform: translateX(-50%) rotate(10deg) translateY(-18px);
+    }
+
+    .flower5 {
+        transform: translateX(-50%) rotate(22deg);
+    }
+
+    .flower-head {
+        font-size: 48px;
+    }
+
+    .flower::after {
+        font-size: 30px;
+        bottom: -55px;
+        left: -14px;
+    }
+
+    button {
+        padding: 13px 24px;
+        font-size: 15px;
+    }
+
+    .message.show {
+        max-height: 900px;
+        margin-top: 20px;
+    }
+
+    .message h2 {
+        font-size: 19px;
+        margin-bottom: 12px;
     }
 
     .message p {
+        font-size: 15px;
+        line-height: 1.65;
+        min-height: 60px;
+    }
 
-        font-size: 16px;
+    .heart {
+        font-size: 36px;
+        margin-top: 10px;
+    }
 
+    .bottom-text {
+        font-size: 11px;
+        bottom: 10px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 380px) {
+
+    .bouquet {
+        height: 160px;
+        transform: scale(0.82);
+    }
+
+    .flower-head {
+        font-size: 42px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .message p {
+        font-size: 14px;
     }
 }
