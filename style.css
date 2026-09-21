@@ -134,7 +134,9 @@ body::before {
 
 h1 {
 
-    font-size: clamp(36px, 9vw, 70px);
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(42px, 11vw, 78px);
+    font-weight: 600;
 
     margin-bottom: 8px;
 
@@ -164,11 +166,13 @@ h1 {
 
 .subtitle {
 
-    font-size: 17px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-weight: 500;
 
     color: #fff;
 
-    opacity: .9;
+    opacity: .95;
 
     margin-bottom: 20px;
 }
@@ -280,20 +284,24 @@ button:active {
 
 .message h2 {
 
+    font-family: 'Dancing Script', cursive;
     color: #ffe56b;
 
     margin-bottom: 16px;
 
-    font-size: 22px;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .message p {
 
+    font-family: 'Dancing Script', cursive;
     min-height: 80px;
 
-    line-height: 1.7;
+    line-height: 1.6;
 
-    font-size: 17px;
+    font-size: 22px;
+    font-weight: 500;
 
     color: #fff;
 }
@@ -319,10 +327,11 @@ button:active {
 }
 
 .photo-caption {
+    font-family: 'Dancing Script', cursive;
     margin-top: 12px;
-    font-size: 16px;
+    font-size: 22px;
     color: #ffe56b;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
@@ -441,12 +450,12 @@ button:active {
     }
 
     h1 {
-        font-size: clamp(32px, 11vw, 48px);
+        font-size: clamp(38px, 12vw, 56px);
         margin-bottom: 6px;
     }
 
     .subtitle {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 16px;
         line-height: 1.4;
     }
@@ -467,13 +476,13 @@ button:active {
     }
 
     .message h2 {
-        font-size: 19px;
+        font-size: 24px;
         margin-bottom: 12px;
     }
 
     .message p {
-        font-size: 15px;
-        line-height: 1.65;
+        font-size: 18px;
+        line-height: 1.55;
         min-height: 60px;
     }
 
@@ -483,7 +492,7 @@ button:active {
     }
 
     .photo-caption {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .heart {
@@ -509,10 +518,10 @@ button:active {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .message p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
