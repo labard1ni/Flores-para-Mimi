@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at 50% 100%,
+        #ffd95a 0%,
+        #f6a623 25%,
+        #d85c36 55%,
+        #422b5c 100%);
+
+    color: white;
+}
+
+/* =========================
+   FONDO
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.2), transparent 2%),
+        radial-gradient(circle at 70% 30%, rgba(255,255,255,.15), transparent 2%),
+        radial-gradient(circle at 40% 70%, rgba(255,255,255,.1), transparent 2%);
+
+    animation: backgroundMove 8s infinite alternate ease-in-out;
+
+    pointer-events: none;
+}
+
+@keyframes backgroundMove {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+}
+
+/* =========================
+   TARJETA
+========================= */
+
+.card {
+
+    width: min(600px, 95%);
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    border: 1px solid rgba(255,255,255,.3);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35),
+        inset 0 0 30px rgba(255,255,255,.08);
+
+    animation: cardAppear 1.5s ease;
+}
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(60px) scale(.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* =========================
+   FECHA
+========================= */
+
+.date {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 193, 7, .25);
+
+    border: 1px solid rgba(255,215,70,.6);
+
+    color: #fff7b0;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+h1 {
+
+    font-size: clamp(40px, 10vw, 70px);
+
+    margin-bottom: 10px;
+
+    color: #ffe45c;
+
+    text-shadow:
+        0 0 10px #ffd000,
+        0 0 25px rgba(255,190,0,.7);
+
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+
+    from {
+        text-shadow:
+            0 0 10px #ffd000;
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 25px #ffd000,
+            0 0 50px #ffae00;
+    }
+}
+
+.subtitle {
+
+    font-size: 18px;
+
+    color: #fff;
+
+    opacity: .9;
+
+    margin-bottom: 25px;
+}
+
+/* =========================
+   RAMO
+========================= */
+
+.bouquet {
+
+    position: relative;
+
+    height: 280px;
+
+    margin: 10px auto 25px;
+
+    max-width: 430px;
+}
+
+/* Tallos */
+
+.stem {
+
+    position: absolute;
+
+    width: 7px;
+
+    height: 160px;
+
+    background: linear-gradient(
+        to right,
+        #245b26,
+        #58a447,
+        #245b26
+    );
+
+    bottom: -130px;
+
+    left: 50%;
+
+    transform-origin: bottom;
+
+    border-radius: 10px;
+}
+
+/* Flores */
+
+.flower {
+
+    position: absolute;
+
+    bottom: 90px;
+
+    left: 50%;
+
+    transform-origin: bottom center;
+
+    animation: flowerMove 3s infinite ease-in-out;
+}
+
+.flower1 {
+    transform: translateX(-50%) rotate(-25deg);
+}
+
+.flower2 {
+    transform: translateX(-50%) rotate(-12deg) translateY(-25px);
+}
+
+.flower3 {
+    transform: translateX(-50%) translateY(-45px);
+}
+
+.flower4 {
+    transform: translateX(-50%) rotate(12deg) translateY(-25px);
+}
+
+.flower5 {
+    transform: translateX(-50%) rotate(25deg);
+}
+
+@keyframes flowerMove {
+
+    0%,100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -8px;
+    }
+}
+
+.flower-head {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 70px;
+
+    filter:
+        drop-shadow(0 5px 5px rgba(0,0,0,.3))
+        drop-shadow(0 0 15px rgba(255,200,0,.7));
+
+    animation: flowerGlow 2s infinite alternate;
+}
+
+@keyframes flowerGlow {
+
+    from {
+        filter:
+            drop-shadow(0 5px 5px rgba(0,0,0,.3));
+    }
+
+    to {
+        filter:
+            drop-shadow(0 5px 5px rgba(0,0,0,.3))
+            drop-shadow(0 0 20px #ffd000);
+    }
+}
+
+/* Hojas */
+
+.flower::after {
+
+    content: "🍃";
+
+    position: absolute;
+
+    bottom: -80px;
+
+    left: -20px;
+
+    font-size: 45px;
+
+    transform: rotate(-20deg);
+}
+
+/* =========================
+   BOTON
+========================= */
+
+button {
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ffe259,
+        #ffa751
+    );
+
+    color: #633b00;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.25);
+
+    transition: .3s;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 10px 35px rgba(255,210,50,.6);
+}
+
+button:active {
+
+    transform: scale(.95);
+}
+
+/* =========================
+   MENSAJE
+========================= */
+
+.message {
+
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 1s ease,
+        opacity 1s ease,
+        margin-top 1s ease;
+}
+
+.message.show {
+
+    max-height: 500px;
+
+    opacity: 1;
+
+    margin-top: 30px;
+}
+
+.message h2 {
+
+    color: #ffe56b;
+
+    margin-bottom: 18px;
+
+    font-size: 25px;
+}
+
+.message p {
+
+    min-height: 90px;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    color: #fff;
+}
+
+/* =========================
+   CORAZON
+========================= */
+
+.heart {
+
+    font-size: 45px;
+
+    margin-top: 15px;
+
+    animation: heartBeat 1.2s infinite;
+}
+
+@keyframes heartBeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+/* =========================
+   PETALOS
+========================= */
+
+.petal {
+
+    position: fixed;
+
+    top: -50px;
+
+    font-size: 20px;
+
+    pointer-events: none;
+
+    z-index: 10;
+
+    animation:
+        fall linear forwards,
+        rotatePetal 2s linear infinite;
+}
+
+@keyframes fall {
+
+    to {
+        transform:
+            translateY(110vh)
+            translateX(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes rotatePetal {
+
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+/* =========================
+   TEXTO INFERIOR
+========================= */
+
+.bottom-text {
+
+    position: fixed;
+
+    bottom: 15px;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    opacity: .7;
+
+    pointer-events: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .card {
+
+        padding: 35px 20px;
+
+    }
+
+    .bouquet {
+
+        transform: scale(.85);
+
+        margin-top: -5px;
+
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+
+        font-size: 16px;
+    }
+
+    .message p {
+
+        font-size: 16px;
+
+    }
+}
