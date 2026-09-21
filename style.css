@@ -174,136 +174,32 @@ h1 {
 }
 
 /* =========================
-   RAMO
+   RAMO (IMAGEN)
 ========================= */
 
 .bouquet {
-
     position: relative;
-
-    height: 260px;
-
-    margin: 5px auto 20px;
-
-    max-width: 400px;
+    margin: 10px auto 25px;
+    max-width: 320px;
+    width: 100%;
 }
 
-/* Tallos */
-
-.stem {
-
-    position: absolute;
-
-    width: 6px;
-
-    height: 150px;
-
-    background: linear-gradient(
-        to right,
-        #245b26,
-        #58a447,
-        #245b26
-    );
-
-    bottom: -120px;
-
-    left: 50%;
-
-    transform-origin: bottom;
-
-    border-radius: 10px;
+.bouquet-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,.35));
+    animation: flowerFloat 3s ease-in-out infinite;
 }
 
-/* Flores */
-
-.flower {
-
-    position: absolute;
-
-    bottom: 80px;
-
-    left: 50%;
-
-    transform-origin: bottom center;
-
-    animation: flowerMove 3s infinite ease-in-out;
-}
-
-.flower1 {
-    transform: translateX(-50%) rotate(-25deg);
-}
-
-.flower2 {
-    transform: translateX(-50%) rotate(-12deg) translateY(-22px);
-}
-
-.flower3 {
-    transform: translateX(-50%) translateY(-40px);
-}
-
-.flower4 {
-    transform: translateX(-50%) rotate(12deg) translateY(-22px);
-}
-
-.flower5 {
-    transform: translateX(-50%) rotate(25deg);
-}
-
-@keyframes flowerMove {
-
-    0%,100% {
-        margin-top: 0;
+@keyframes flowerFloat {
+    0%, 100% {
+        transform: translateY(0);
     }
-
     50% {
-        margin-top: -8px;
+        transform: translateY(-8px);
     }
-}
-
-.flower-head {
-
-    position: relative;
-
-    z-index: 2;
-
-    font-size: 64px;
-
-    filter:
-        drop-shadow(0 5px 5px rgba(0,0,0,.3))
-        drop-shadow(0 0 15px rgba(255,200,0,.7));
-
-    animation: flowerGlow 2s infinite alternate;
-}
-
-@keyframes flowerGlow {
-
-    from {
-        filter:
-            drop-shadow(0 5px 5px rgba(0,0,0,.3));
-    }
-
-    to {
-        filter:
-            drop-shadow(0 5px 5px rgba(0,0,0,.3))
-            drop-shadow(0 0 20px #ffd000);
-    }
-}
-
-/* Hojas */
-
-.flower::after {
-
-    content: "🍃";
-
-    position: absolute;
-
-    bottom: -70px;
-
-    left: -18px;
-
-    font-size: 40px;
-
-    transform: rotate(-20deg);
 }
 
 /* =========================
@@ -528,50 +424,8 @@ button:active {
     }
 
     .bouquet {
-        height: 180px;
-        margin: 0 auto 15px;
-        max-width: 280px;
-        transform: scale(0.9);
-    }
-
-    .stem {
-        height: 110px;
-        width: 5px;
-        bottom: -85px;
-    }
-
-    .flower {
-        bottom: 55px;
-    }
-
-    .flower1 {
-        transform: translateX(-50%) rotate(-22deg);
-    }
-
-    .flower2 {
-        transform: translateX(-50%) rotate(-10deg) translateY(-18px);
-    }
-
-    .flower3 {
-        transform: translateX(-50%) translateY(-32px);
-    }
-
-    .flower4 {
-        transform: translateX(-50%) rotate(10deg) translateY(-18px);
-    }
-
-    .flower5 {
-        transform: translateX(-50%) rotate(22deg);
-    }
-
-    .flower-head {
-        font-size: 48px;
-    }
-
-    .flower::after {
-        font-size: 30px;
-        bottom: -55px;
-        left: -14px;
+        max-width: 240px;
+        margin: 5px auto 18px;
     }
 
     button {
@@ -610,12 +464,7 @@ button:active {
 @media (max-width: 380px) {
 
     .bouquet {
-        height: 160px;
-        transform: scale(0.82);
-    }
-
-    .flower-head {
-        font-size: 42px;
+        max-width: 200px;
     }
 
     h1 {
