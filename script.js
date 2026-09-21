@@ -20,6 +20,14 @@ Con mucho cariño. 💛
 
 
 // ==========================================
+// AUDIO
+// ==========================================
+
+const song = new Audio("flores-amarillas.mp3");
+song.loop = true; // se repite mientras esté abierta la página
+
+
+// ==========================================
 // BOTON
 // ==========================================
 
@@ -40,6 +48,11 @@ button.addEventListener("click", () => {
     message.classList.add("show");
 
     button.innerHTML = "👑Para ti, princesa👑";
+
+    // Reproducir la canción
+    song.play().catch(err => {
+        console.log("No se pudo reproducir el audio automáticamente:", err);
+    });
 
     createExplosion();
 
