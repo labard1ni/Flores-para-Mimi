@@ -13,9 +13,15 @@ y todos los momentos que todavía nos quedan por vivir.
 Espero que cada vez que veas estas flores recuerdes
 que hay alguien que piensa en ti y desea verte sonreír.
 
+Sé que aveces hay complicaciones, y probablemente las siga
+habiendo, pero sé que nuestro amor es más grande que 
+cualquier cosa.
+
 🌻 Feliz 21 de septiembre 🌻
 
-Con mucho cariño. 💛
+Con mucho cariño, Diego. 💛
+
+Te amo. ❤️
 `;
 
 
