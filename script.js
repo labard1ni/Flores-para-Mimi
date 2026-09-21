@@ -39,7 +39,7 @@ button.addEventListener("click", () => {
 
     message.classList.add("show");
 
-    button.innerHTML = "🌻 Para ti, con cariño 🌻";
+    button.innerHTML = "👑Para ti, princesa👑";
 
     createExplosion();
 
