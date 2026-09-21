@@ -134,7 +134,7 @@ body::before {
 
 h1 {
 
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Cursive', cursive;
     font-size: clamp(42px, 11vw, 78px);
     font-weight: 600;
 
@@ -166,7 +166,7 @@ h1 {
 
 .subtitle {
 
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Cursive', cursive;
     font-size: 22px;
     font-weight: 500;
 
@@ -284,7 +284,7 @@ button:active {
 
 .message h2 {
 
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Cursive', cursive;
     color: #ffe56b;
 
     margin-bottom: 16px;
@@ -295,7 +295,7 @@ button:active {
 
 .message p {
 
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Cursive', cursive;
     min-height: 80px;
 
     line-height: 1.6;
@@ -327,7 +327,7 @@ button:active {
 }
 
 .photo-caption {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Cursive', cursive;
     margin-top: 12px;
     font-size: 22px;
     color: #ffe56b;
