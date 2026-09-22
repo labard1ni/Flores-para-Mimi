@@ -4,14 +4,14 @@
 
 const messageText = `
 Hoy, 21 de septiembre, quería regalarte unas flores amarillas,
-pero también quería darte un pequeño detalle que pudieras guardar.
+pero como no pude, quería darte un detalle que pudieras guardar.
 
 Que estas flores representen la alegría que traes a mi vida,
-los momentos bonitos que hemos compartido
-y todos los momentos que todavía nos quedan por vivir.
+los momentos bonitos que hemos compartido y todos los momentos 
+que todavía nos quedan por vivir.
 
-Espero que cada vez que veas estas flores recuerdes
-que hay alguien que piensa en ti y desea verte sonreír.
+Espero que cada vez que veas estas flores recuerdes que 
+hay alguien que piensa en ti y ama verte sonreír.
 
 Sé que aveces hay complicaciones, y probablemente las siga
 habiendo, pero sé que nuestro amor es más grande que 
